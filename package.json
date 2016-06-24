@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test": "mocha -R spec 'tests/app'",
+    "test": "node mocha.js",
     "lint": "eslint --quiet tests/app app",
     "lint-warn": "eslint tests/app app"
   },
