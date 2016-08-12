@@ -10,6 +10,19 @@ exports.flowControlAnswers = {
     //
     // otherwise the function should return the number, or false if no number
     // was provided or the value provided is not a number
-
+    if(!isFinite(num)){
+      return false;
+    }
+    
+    var res = '';
+    if(num % 3 == 0){
+      res += "fizz";
+    }    
+    if(num % 5 == 0)
+    {
+      res += "buzz";
+    }
+    
+    return res || num;
   }
 };
